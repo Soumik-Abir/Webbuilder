@@ -18,7 +18,7 @@ const SignUp = () => {
               className="border md:h-12 p-2 w-full md:rounded-tl-md md:rounded-bl-md md:w-2/4"
             />
 
-            <Button className="h-10 rounded mt-4 md:h-12 md:w-1/4 md:rounded-tr-md md:rounded-br-md md:mt-0 md:rounded-none">
+            <Button className="h-10 rounded mt-4 md:h-12 md:w-1/4 md:rounded-tr-lg md:rounded-br-lg md:mt-0 md:rounded-none">
               Sign Up
             </Button>
           </div>
