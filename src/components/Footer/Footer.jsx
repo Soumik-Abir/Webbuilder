@@ -5,7 +5,7 @@ import Dropdown from "../Header/DropDown";
 // Reusable component for each section containing TextElements
 const FooterSection = ({ title, texts, disableHover }) => {
   return (
-    <div className="flex flex-col gap-4 pb-16">
+    <div className="flex flex-col gap-4 pb-4 md:pb-16">
       <TextElement
         text={title}
         className="text-lg text-white font-bold"
