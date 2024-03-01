@@ -33,7 +33,7 @@ const Footer = () => {
       
       <div className="flex items-center mb-8 pb-8 md:pb-16">
         <TextElement text="United States" disableHover={true} />
-        <Dropdown options={countryOptions} className="w-28 max-h-12"/>
+        <Dropdown options={countryOptions} className="w-32 max-h-12"/>
       </div>
     </div>
   );

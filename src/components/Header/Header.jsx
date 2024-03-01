@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex flex-col mt-16 m-8 p-8">
+      <div className="flex flex-col mt-16 m-8 mb-0 p-8 pb-0">
         <div className="my-4 text-3xl md:text-5xl text-slate-700">
           Best Website builders in the US
         </div>

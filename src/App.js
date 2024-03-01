@@ -5,12 +5,14 @@ import Navbar from './components/Navbar/Navbar';
 import SignUp from './components/SignUp/SignUp';
 import Footer from './components/Footer/Footer';
 import Related from './components/Related/Related';
+import Main from './components/Main/Main';
 
 function App() {
   return (
     <Router> {/* Wrap your components with BrowserRouter */}
       <Navbar />
       <Header />
+      <Main />
       <Related/>
       <SignUp/>
       <Footer/>

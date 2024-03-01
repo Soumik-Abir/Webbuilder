@@ -21,7 +21,7 @@ const RelatedCard = ({ productImage, discount, title, description, price, origin
             Limited time
           </div>
         </div>
-        <div className="mt-1 text-base font-bold text-gray-500 whitespace-nowrap">
+        <div className="mt-1 text-base font-bold text-gray-500">
           {title}
         </div>
       </div>
