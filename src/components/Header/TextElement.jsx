@@ -1,9 +1,10 @@
-// TextElement.jsx
 import React from "react";
 
-const TextElement = ({ text, className }) => {
+const TextElement = ({ text, className, disableHover }) => {
+  const hoverClass = disableHover ? "" : "hover:text-blue-500 cursor-pointer";
+
   return (
-    <div className={`text-gray-600 leading-5 hover:text-blue-500 transition-colors duration-300 cursor-pointer ${className}`}>
+    <div className={`text-gray-500 ${hoverClass} transition-colors duration-300 ${className}`}>
       {text}
     </div>
   );

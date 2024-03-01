@@ -4,6 +4,7 @@ import { ReactComponent as RightTick } from "../../assets/Right_Tick.svg";
 import { ReactComponent as Information } from "../../assets/Information_Icon.svg";
 import Dropdown from "./DropDown";
 import TextElement from "./TextElement";
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 const Header = () => {
   const textElements = [
@@ -14,15 +15,22 @@ const Header = () => {
     "Tooling",
     "BlueHosting",
   ];
+  const breadcrumbs = [
+    { label: "Home", url: "/" },
+    { label: "Hosting for all", url: "/hosting-for-all" },
+    { label: "Hosting", url: "/hosting" },
+    { label: "Hosting6", url: "/hosting6" },
+    { label: "Hosting5", url: "/hosting5" }
+  ];
 
   return (
     <>
       <div className="flex flex-col mt-16 m-8 p-8">
-        <div className="my-2 text-3xl md:text-5xl text-slate-700">
+        <div className="my-4 text-3xl md:text-5xl text-slate-700">
           Best Website builders in the US
         </div>
-        <div className="mt-2 bg-zinc-200 min-h-[2px]" />
-        <div className="flex gap-4 my-2 items-center justify-between md:flex-row">
+        <div className="mt-4 bg-zinc-200 min-h-[2px]" />
+        <div className="flex gap-4 my-4 items-center justify-between md:flex-row">
           {/* Container for the contents on the left */}
           <div className="flex items-center gap-4 md:flex">
             <div className="flex gap-1 items-center">
@@ -53,6 +61,9 @@ const Header = () => {
           {textElements.map((text, index) => (
             <TextElement key={index} text={text} />
           ))}
+        </div>
+        <div className="md:flex justify-start">
+          <Breadcrumbs paths={breadcrumbs} />
         </div>
       </div>
     </>
