@@ -10,7 +10,7 @@ const SignUp = () => {
           <TextElement
             text="Sign up and get exclusive special deals"
             className="text-3xl md:text-4xl w-full md:w-2/4 mb-4 md:mb-0"
-            disableHover={true} // Disable hover effect and cursor pointer
+            disableHover={true}
           />
           <div className="flex flex-col md:flex-row md:justify-end items-center w-full md:w-3/4">
             <input

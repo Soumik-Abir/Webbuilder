@@ -7,6 +7,9 @@ const Main = () => {
     <div className='m-8 mt-0 p-8 pt-0'>
 
     <ProductCard />
+    <ProductCard />
+    <ProductCard />
+    <ProductCard />
     </div>
       
     </>

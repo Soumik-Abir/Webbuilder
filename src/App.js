@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import SignUp from './components/SignUp/SignUp';
@@ -9,7 +9,7 @@ import Main from './components/Main/Main';
 
 function App() {
   return (
-    <Router> {/* Wrap your components with BrowserRouter */}
+    <Router>
       <Navbar />
       <Header />
       <Main />

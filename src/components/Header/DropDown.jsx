@@ -14,19 +14,18 @@ const Dropdown = ({ buttonText, options, className }) => {
         className="flex gap-1 items-center cursor-pointer"
         onClick={toggleDropdown}
       >
-        {/* Render the button text if provided */}
         {buttonText && <div className="text-gray-600 leading-5">{buttonText}</div>}
-        {/* Icon */}
+        
         {isDropdownOpen ? (
           <RiArrowDropUpLine className="w-6 h-6 text-gray-600" />
         ) : (
           <RiArrowDropDownLine className="w-6 h-6 text-gray-600" />
         )}
       </div>
-      {/* Render the dropdown content if open */}
+      
       {isDropdownOpen && (
         <div className={`absolute mt-2 w-32 border rounded-md shadow-lg bg-white cursor-pointer overflow-y-auto max-h-40 ${className}`}>
-          {/* Render dropdown options dynamically */}
+      
           {options.map((option, index) => (
             <div
               key={index}

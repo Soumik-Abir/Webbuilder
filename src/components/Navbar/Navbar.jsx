@@ -49,7 +49,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        {/* Display side panel only on small screens when menu is toggled */}
         {isOpen && (
           <div className="bg-gray-800 fixed top-0 left-0 w-64 h-full flex flex-col items-start pt-10 md:hidden">
             <ul>
