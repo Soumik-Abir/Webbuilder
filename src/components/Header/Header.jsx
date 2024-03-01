@@ -22,6 +22,7 @@ const Header = () => {
     { label: "Hosting6", url: "/hosting6" },
     { label: "Hosting5", url: "/hosting5" }
   ];
+  const releventOptions =["Tools", "AWS Builder", "Start Build", "Build Supplies", "Tooling", "BlueHosting" ] ;
 
   return (
     <>
@@ -52,7 +53,10 @@ const Header = () => {
           </div>
           {/* Container for the Dropdown */}
           <div className="flex items-center">
-            <Dropdown />
+            <Dropdown 
+              buttonText="Top Relevant"
+              options={releventOptions}
+            />
           </div>
         </div>
 

@@ -1,8 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
-const Dropdown = () => {
-  // Manage the dropdown state within the Dropdown component
+const Dropdown = ({ buttonText, options, className }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -15,7 +14,8 @@ const Dropdown = () => {
         className="flex gap-1 items-center cursor-pointer"
         onClick={toggleDropdown}
       >
-        <div className="text-gray-600 leading-5">Top Relevant</div>
+        {/* Render the button text if provided */}
+        {buttonText && <div className="text-gray-600 leading-5">{buttonText}</div>}
         {/* Icon */}
         {isDropdownOpen ? (
           <RiArrowDropUpLine className="w-6 h-6 text-gray-600" />
@@ -25,17 +25,17 @@ const Dropdown = () => {
       </div>
       {/* Render the dropdown content if open */}
       {isDropdownOpen && (
-        <div className="absolute mt-2 w-32 border rounded-md shadow-lg bg-white cursor-pointer">
-          {/* Dropdown options */}
-          <div className="p-2" onClick={() => console.log("Option 1")}>
-            Tools
-          </div>
-          <div className="p-2" onClick={() => console.log("Option 2")}>
-            Tooling
-          </div>
-          <div className="p-2" onClick={() => console.log("Option 3")}>
-            Start Build
-          </div>
+        <div className={`absolute mt-2 w-32 border rounded-md shadow-lg bg-white cursor-pointer overflow-y-auto max-h-40 ${className}`}>
+          {/* Render dropdown options dynamically */}
+          {options.map((option, index) => (
+            <div
+              key={index}
+              className="p-2 hover:bg-gray-200"
+              onClick={() => console.log(option)}
+            >
+              {option}
+            </div>
+          ))}
         </div>
       )}
     </div>
