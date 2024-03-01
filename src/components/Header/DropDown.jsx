@@ -15,7 +15,7 @@ const Dropdown = () => {
         className="flex gap-1 items-center cursor-pointer"
         onClick={toggleDropdown}
       >
-      <div className="text-gray-600 leading-5">Top Relevant</div>
+        <div className="text-gray-600 leading-5">Top Relevant</div>
         {/* Icon */}
         {isDropdownOpen ? (
           <RiArrowDropUpLine className="w-6 h-6 text-gray-600" />
@@ -28,13 +28,13 @@ const Dropdown = () => {
         <div className="absolute mt-2 w-32 border rounded-md shadow-lg bg-white cursor-pointer">
           {/* Dropdown options */}
           <div className="p-2" onClick={() => console.log("Option 1")}>
-            Option 1
+            Tools
           </div>
           <div className="p-2" onClick={() => console.log("Option 2")}>
-            Option 2
+            Tooling
           </div>
           <div className="p-2" onClick={() => console.log("Option 3")}>
-            Option 3
+            Start Build
           </div>
         </div>
       )}

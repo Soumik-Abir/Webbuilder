@@ -3,8 +3,8 @@ import React from "react";
 import { ReactComponent as RightTick } from "../../assets/Right_Tick.svg";
 import { ReactComponent as Information } from "../../assets/Information_Icon.svg";
 import Dropdown from "./DropDown";
-import TextElement from "./TextElement";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
+import TextElement from "../TextElement/TextElement";
 
 const Header = () => {
   const textElements = [
