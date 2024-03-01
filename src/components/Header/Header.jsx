@@ -56,6 +56,7 @@ const Header = () => {
             <Dropdown 
               buttonText="Top Relevant"
               options={releventOptions}
+              className="text-sm"
             />
           </div>
         </div>
