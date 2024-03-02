@@ -2,55 +2,48 @@ import React from "react";
 import TextElement from "../TextElement/TextElement";
 import { ReactComponent as Tick } from "../../assets/Tick.svg";
 
-const ProductDetails = ({ showMore, toggleShowMore }) => {
+const ProductDetails = ({
+  showMore,
+  toggleShowMore,
+  title,
+  description,
+  mainHighlights,
+  whatYouGet,
+  priceDiscount,
+  ratingDescriptions,
+  whyWeLoveIt,
+}) => {
   return (
     <div className="flex flex-col w-full md:w-[52%] p-6">
       <div className="mt-2 text-xs md:text-base text-gray-600">
         <div>
           <span className="text-sm md:text-lg font-bold">
-            WixPro 72-Inch Responsive Website Builder{" "}
+            {title}
           </span>
-          - Comprehensive Digital Platform Creation Tool, Streamlined Design
-          Interface for Professional Websites and Online Stores (Black/Blue)
+          - {description}
         </div>
         <div className="mt-4 text-sm md:text-lg font-bold text-slate-700">
-          Main highlights
+          {mainHighlights}
         </div>
         <div className="mt-4">
-          [What You Get]: Receive the WixPro website builder suite, access to
-          premium design templates, an extensive library of widgets and apps,
-          and detailed step-by-step guides.
+          {whatYouGet}
         </div>
         {showMore && (
           <>
             <div className="flex gap-2 m-2 text-sky-700">
-              <div className="p-1 text-xs md:text-sm bg-gray-100 rounded-md">28% off</div>
+              <div className="p-1 text-xs md:text-sm bg-gray-100 rounded-md">{priceDiscount}</div>
             </div>
             <div className="flex flex-col items-start p-2 bg-orange-50 rounded-xl">
-              <div className="flex gap-2">
-                <div className="justify-center px-3 p-2 text-base text-center text-blue-500 bg-white rounded ">
-                  9.9
+              {ratingDescriptions.map((item, index) => (
+                <div key={index} className="flex gap-2">
+                  <div className="justify-center px-3 p-2 text-base text-center text-blue-500 bg-white rounded ">
+                    {item.rating}
+                  </div>
+                  <div className="flex-auto my-auto text-xs md:text-base text-gray-600 capitalize">
+                    {item.description}
+                  </div>
                 </div>
-                <div className="flex-auto my-auto text-xs md:text-base text-gray-600 capitalize">
-                  building responsive
-                </div>
-              </div>
-              <div className="flex gap-2 mt-2">
-                <div className="justify-center px-3 py-2 text-base text-center text-blue-500 bg-white rounded ">
-                  8.9
-                </div>
-                <div className="flex-auto my-auto text-xs md:text-base text-gray-600 capitalize">
-                  Cool
-                </div>
-              </div>
-              <div className="flex gap-2 mt-2">
-                <div className="justify-center px-3 py-2 text-base text-center text-blue-500 bg-white rounded ">
-                  8.9
-                </div>
-                <div className="flex-auto my-auto text-xs md:text-base text-gray-600 capitalize">
-                  Docs
-                </div>
-              </div>
+              ))}
             </div>
             <div>
               <TextElement
@@ -58,18 +51,12 @@ const ProductDetails = ({ showMore, toggleShowMore }) => {
                 text="Why we love it"
                 disableHover={true}
               />
-              <div className="flex gap-1 mt-1 items-center">
-                <Tick />
-                <span className="text-gray-600">Documentation</span>
-              </div>
-              <div className="flex gap-1 mt-1 items-center">
-                <Tick />
-                <span className="text-gray-600">Easy Use</span>
-              </div>
-              <div className="flex gap-1 mt-1 items-center">
-                <Tick />
-                <span className="text-gray-600">Out of box</span>
-              </div>
+              {whyWeLoveIt.map((reason, index) => (
+                <div key={index} className="flex gap-1 mt-1 items-center">
+                  <Tick />
+                  <span className="text-gray-600">{reason}</span>
+                </div>
+              ))}
             </div>
           </>
         )}

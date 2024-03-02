@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
-const Dropdown = ({ buttonText, options, className }) => {
+const Dropdown = ({ options, className }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(options[0]);
+
+  useEffect(() => {
+    setSelectedOption(options[0]); // Set initial selected option
+  }, [options]);
 
   const toggleDropdown = () => {
     setIsDropdownOpen((prevIsDropdownOpen) => !prevIsDropdownOpen);
+  };
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    toggleDropdown();
   };
 
   return (
@@ -14,8 +24,7 @@ const Dropdown = ({ buttonText, options, className }) => {
         className="flex gap-1 items-center cursor-pointer"
         onClick={toggleDropdown}
       >
-        {buttonText && <div className="text-gray-600 leading-5">{buttonText}</div>}
-        
+        <div className="text-gray-600">{selectedOption}</div>
         {isDropdownOpen ? (
           <RiArrowDropUpLine className="w-6 h-6 text-gray-600" />
         ) : (
@@ -24,13 +33,12 @@ const Dropdown = ({ buttonText, options, className }) => {
       </div>
       
       {isDropdownOpen && (
-        <div className={`absolute mt-2 w-32 border rounded-md shadow-lg bg-white cursor-pointer overflow-y-auto max-h-40 ${className}`}>
-      
+        <div className={`absolute mt-2 w-32 border rounded-md shadow-lg bg-white cursor-pointer overflow-y-auto max-h-40 ${className}`} style={{ scrollbarWidth: "thin", scrollbarColor: "#4A5568 #EDF2F7", right:"0" }}>
           {options.map((option, index) => (
             <div
               key={index}
               className="p-2 hover:bg-gray-200"
-              onClick={() => console.log(option)}
+              onClick={() => handleOptionClick(option)}
             >
               {option}
             </div>

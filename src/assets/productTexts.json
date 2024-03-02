@@ -1,0 +1,130 @@
+[
+    {
+      "id": "1",
+      "tagName": "Best Choice",
+      "image": "...",
+      "imageDescription": "Builder 1",
+      "title": "WixPro 72-Inch Responsive Website Builder",
+      "description": "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
+      "mainHighlights": "Main highlights",
+      "whatYouGet": "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides",
+      "priceDiscount": "28% off",
+      "ratingDescriptions": [
+        {
+          "rating": "9.9",
+          "description": "building responsive"
+        },
+        {
+          "rating": "8.9",
+          "description": "Cool"
+        },
+        {
+          "rating": "8.9",
+          "description": "Docs"
+        }
+      ],
+      "whyWeLoveIt": [
+        "Documentation",
+        "Easy Use",
+        "Out of box"
+      ],
+      "rating": "9.8",
+      "ratingDescription": "Exceptional"
+    },
+    {
+      "id": "2",
+      "tagName": "Best Choice",
+      "image": "...",
+      "imageDescription": "Builder 2",
+      "title": "WixPro 72-Inch Responsive Website Builder",
+      "description": "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
+      "mainHighlights": "Main highlights",
+      "whatYouGet": "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides",
+      "priceDiscount": "28% off",
+      "ratingDescriptions": [
+        {
+          "rating": "9.9",
+          "description": "building responsive"
+        },
+        {
+          "rating": "8.9",
+          "description": "Cool"
+        },
+        {
+          "rating": "8.9",
+          "description": "Docs"
+        }
+      ],
+      "whyWeLoveIt": [
+        "Documentation",
+        "Easy Use",
+        "Out of box"
+      ],
+      "rating": "9",
+      "ratingDescription": "Exceptional"
+    },
+    {
+      "id": "3",
+      "tagName": "",
+      "image": "...",
+      "imageDescription": "Builder 3",
+      "title": "WixPro 72-Inch Responsive Website Builder",
+      "description": "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
+      "mainHighlights": "Main highlights",
+      "whatYouGet": "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides",
+      "priceDiscount": "28% off",
+      "ratingDescriptions": [
+        {
+          "rating": "9",
+          "description": "building responsive"
+        },
+        {
+          "rating": "8.9",
+          "description": "Cool"
+        },
+        {
+          "rating": "8.9",
+          "description": "Docs"
+        }
+      ],
+      "whyWeLoveIt": [
+        "Documentation",
+        "Easy Use",
+        "Out of box"
+      ],
+      "rating": "5.8",
+      "ratingDescription": "Exceptional"
+    },
+    {
+      "id": "4",
+      "tagName": "",
+      "image": "...",
+      "imageDescription": "Builder 4",
+      "title": "WixPro 72-Inch Responsive Website Builder",
+      "description": "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
+      "mainHighlights": "Main highlights",
+      "whatYouGet": "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides",
+      "priceDiscount": "28% off",
+      "ratingDescriptions": [
+        {
+          "rating": "7.9",
+          "description": "building responsive"
+        },
+        {
+          "rating": "8.9",
+          "description": "Cool"
+        },
+        {
+          "rating": "8.9",
+          "description": "Docs"
+        }
+      ],
+      "whyWeLoveIt": [
+        "Documentation",
+        "Easy Use",
+        "Out of box"
+      ],
+      "rating": "7.8",
+      "ratingDescription": "Exceptional"
+    }
+]

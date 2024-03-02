@@ -31,8 +31,7 @@ const Footer = () => {
       <FooterSection title="CONTACT" texts={contactTexts} disableHover={true} />
       
       <div className="flex items-center mb-8 pb-8 md:pb-16">
-        <TextElement text="United States" disableHover={true} />
-        <Dropdown options={countryOptions} className="w-32 max-h-12"/>
+        <Dropdown options={countryOptions} className="w-32 max-h-12 md:max-h-40 text-gray-500"/>
       </div>
     </div>
   );

@@ -1,22 +1,9 @@
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
-import SignUp from './components/SignUp/SignUp';
-import Footer from './components/Footer/Footer';
-import Related from './components/Related/Related';
-import Main from './components/Main/Main';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Header />
-      <Main />
-      <Related/>
-      <SignUp/>
-      <Footer/>
-    </Router>
+    <HomePage/>
   );
 }
 

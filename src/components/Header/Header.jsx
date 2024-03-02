@@ -1,4 +1,4 @@
-// Header.jsx
+
 import React from "react";
 import { ReactComponent as RightTick } from "../../assets/Right_Tick.svg";
 import { ReactComponent as Information } from "../../assets/Information_Icon.svg";
@@ -20,16 +20,9 @@ const Header = () => {
     { label: "Hosting for all", url: "/hosting-for-all" },
     { label: "Hosting", url: "/hosting" },
     { label: "Hosting6", url: "/hosting6" },
-    { label: "Hosting5", url: "/hosting5" },
+    { label: "Hosting5", url: "/hosting5" }
   ];
-  const releventOptions = [
-    "Tools",
-    "AWS Builder",
-    "Start Build",
-    "Build Supplies",
-    "Tooling",
-    "BlueHosting",
-  ];
+  const releventOptions =["Top Relavant", "Tools", "AWS Builder", "Start Build", "Build Supplies", "Tooling", "BlueHosting" ] ;
 
   return (
     <>
@@ -39,10 +32,11 @@ const Header = () => {
         </div>
         <div className="mt-4 bg-zinc-200 min-h-[2px]" />
         <div className="flex gap-4 my-4 items-center justify-between md:flex-row">
+          
           <div className="flex items-center gap-4 md:flex">
             <div className="flex gap-1 items-center">
               <RightTick />
-
+              
               <TextElement
                 text="Last Updated - February 22, 2020"
                 className="hidden md:block"
@@ -50,17 +44,16 @@ const Header = () => {
             </div>
             <div className="flex gap-1 items-center">
               <Information />
-
+              
               <TextElement
                 text="Advertising Disclosure"
                 className="hidden md:block"
               />
             </div>
           </div>
-
+          
           <div className="flex items-center">
             <Dropdown
-              buttonText="Top Relevant"
               options={releventOptions}
               className="text-sm"
             />
